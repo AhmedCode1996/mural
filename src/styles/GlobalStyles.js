@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { FONT_FAMILY } from "../constants";
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -59,5 +59,3 @@ a {
 }
 
 `;
-
-export default GlobalStyle;

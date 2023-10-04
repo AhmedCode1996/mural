@@ -26,4 +26,6 @@ const MainContent = () => {
 
 export default MainContent;
 
-const Wrapper = styled.main``;
+const Wrapper = styled.main`
+  padding-top: 4rem;
+`;

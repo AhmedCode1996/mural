@@ -24,7 +24,12 @@ padding: 12rem 2rem 2rem 2rem;
   & > div {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
+
+    & > * {
+      flex-basis: 250px;
+    }
   }
 `;

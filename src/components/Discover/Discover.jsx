@@ -25,6 +25,10 @@ const Title = styled.h2`
   font-size: ${TYPOGRAPHY.xl4};
   line-height: 1;
   margin-bottom: 5rem;
+
+  @media (max-width: ${420 / 16}rem) {
+    font-size: ${TYPOGRAPHY.xl2};
+  }
 `;
 const Button = styled.button`
   grid-column: 3 / -1;
@@ -40,7 +44,7 @@ const Button = styled.button`
   font-weight: 450;
   white-space: nowrap;
   padding-left: 4rem;
-
+  
   &::before {
     content: "";
     position: absolute;
@@ -49,9 +53,13 @@ const Button = styled.button`
     background-color: ${COLORS.neutral.yellow};
     transition: all 0.4s ease-in-out;
   }
-
+  
   &:hover::before {
     inset: 0 0 0 0;
     transition: all 0.4s ease-in-out;
+  }
+
+  @media (max-width: ${420 / 16}rem) {
+    font-size: ${TYPOGRAPHY.sm};
   }
 `;

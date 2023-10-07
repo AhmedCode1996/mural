@@ -139,6 +139,7 @@ const Quote = styled.blockquote`
 const Actions = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
 `;
 const Link = styled.a`
@@ -193,5 +194,9 @@ const Button = styled.button`
   &:hover::before {
     inset: 0 0 0 0;
     transition: all 0.4s ease-in-out;
+  }
+
+  @media (max-width: ${420 / 16}rem) {
+    font-size: ${TYPOGRAPHY.sm};
   }
 `;

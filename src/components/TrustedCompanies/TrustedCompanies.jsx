@@ -22,17 +22,28 @@ const Wrapper = styled.div`
   & > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
     gap: 4rem;
 
     & > div:last-child {
       grid-column: 1 / -1;
+    }
+
+    @media (max-width: ${770 / 16}rem) {
+      display: block;
+
+      & > * + * {
+        margin-top: 2rem;
+      }
     }
   }
 `;
 
 const Title = styled.h2`
   grid-column: 1 / 3;
-  max-width: 25ch;
+  max-width: 20ch;
+  font-size: ${TYPOGRAPHY.lg};
 `;
 const Button = styled.button`
   grid-column: 3 / -1;

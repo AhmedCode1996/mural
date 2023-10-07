@@ -18,4 +18,8 @@ export default HeroSection;
 const Wrapper = styled.section`
   background-color: ${COLORS.primary};
   padding: 4rem 2rem;
-`
+
+  @media (max-width: ${420 / 16}rem) {
+    margin-top: 8rem;
+  }
+`;

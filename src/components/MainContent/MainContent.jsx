@@ -28,4 +28,5 @@ export default MainContent;
 
 const Wrapper = styled.main`
   padding-top: 4rem;
+
 `;

@@ -17,7 +17,7 @@ export default Header;
 const Wrapper = styled.header`
   position: fixed;
   background-color: ${COLORS.neutral.white};
-  width: 100%;
+  width: 100dvw;
   padding: 1.5rem;
   font-family: ${FONT_FAMILY.inter};
   z-index: 100;

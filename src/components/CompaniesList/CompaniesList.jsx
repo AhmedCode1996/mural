@@ -17,7 +17,7 @@ export default CompaniesList;
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, minmax(150px, 300px));
+  grid-template-columns: repeat(4, minmax(min(120px, 100%), 1fr));
 
   > *:nth-child(-n + 4) {
     border-bottom-width: 0;
@@ -25,6 +25,18 @@ const Wrapper = styled.div`
 
   > *:not(:nth-child(4)):not(:last-child) {
     border-right-width: 0;
+  }
+
+  @media (max-width: ${730 / 16}rem) {
+    grid-template-columns: repeat(2, minmax(min(120px, 100%), 1fr));
+
+    > *:nth-child(-n + 6) {
+      border-bottom-width: 0;
+    }
+
+    > *:not(:nth-child(odd)):not(:last-child) {
+      border-right-width: 1px;
+    }
   }
 `;
 
@@ -34,4 +46,8 @@ const Company = styled.div`
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.15);
+
+  img {
+    background-size: cover;
+  }
 `;

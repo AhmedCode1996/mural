@@ -13,4 +13,5 @@ export default MaxWrapper;
 const Wrapper = styled.div`
   max-width: ${1180 / 16}rem;
   margin-inline: auto;
+  padding-inline: 1rem;
 `;

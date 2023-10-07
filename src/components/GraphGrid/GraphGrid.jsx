@@ -23,5 +23,13 @@ const Wrapper = styled.div`
     & > *:first-child {
       grid-column: 1 / -1;
     }
+
+    @media (max-width: ${730 / 16}rem) {
+      display: block;
+
+      & > * + * {
+        margin-top: 2rem;
+      }
+    }
   }
 `;

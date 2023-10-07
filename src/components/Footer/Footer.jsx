@@ -23,7 +23,8 @@ export default Footer;
 const Wrapper = styled.div`
   & > div {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+    justify-content: center;
     gap: 1.5rem;
   }
 `;
